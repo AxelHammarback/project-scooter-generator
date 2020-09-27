@@ -2,10 +2,10 @@ let header =  document.getElementById("header");
 
 let startName = ["S","St","Sp","Spl","Sk","Sc", "Kr","V","B","D","Dr","Br","Bl","G","Gr","F","Fr","T","Tr","F","Fl","Q",];
 let middleName = ["a","i","o","y","ö","ie","oo","ee", "öö", "oa"];
-let endName = ["rk", "rt", "nk", "rkle", "k", "rtle", "rple", "gle", "nkle", "sh", "sch", "oo", "i"];
+let endName = ["rk", "rt", "nk", "rkle", "k", "rtle", "rple", "gle", "nkle", "sh", "sch", "oo", "i", "w"];
 
-let fonts = ["'MuseoModerno', cursive", "'Syne', sans-serif", "'Kulim Park', sans-serif", "'Lexend Giga', sans-serif", "'Red Hat Display', sans-serif", "'Bungee', cursive", "'Arvo', serif", "'Bungee', cursive", ];
-let colors = ["#FF6852", "#0047FF", "#00E56F", "#118DF0", "#2A176F", "#F85F73", "#FF304F", "#FFB401"];
+let fonts = ["'MuseoModerno', cursive", "'Syne', sans-serif", "'Kulim Park', sans-serif", "'Lexend Giga', sans-serif", "'Red Hat Display', sans-serif", "'Arvo', serif"];
+let colors = ["#FF6852", "#0047FF", "#118DF0", "#2A176F", "#F85F73", "#FF304F"];
 
 
 let pickName = () => {

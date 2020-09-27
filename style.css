@@ -1,0 +1,40 @@
+/* font-family: 'MuseoModerno', cursive;
+font-family: 'Syne', sans-serif;
+font-family: 'Kulim Park', sans-serif;
+font-family: 'Lexend Giga', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Jua', sans-serif;
+font-family: 'Bungee', cursive; */
+
+
+body {
+  background-color: #FF6852;
+  color: #fafafa;
+  /* padding: 400px; */
+  font-family: 'Lexend Giga', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0 auto;
+}
+
+button {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 200px;
+  outline: none;
+  padding: 12px 24px;
+  font-family: 'Lexend Giga', sans-serif;
+  color: #FF6852;
+  margin-top: 32px;
+}
+
+button:active {
+  outline: none;
+}

@@ -1,8 +1,11 @@
 let header =  document.getElementById("header");
 
 let startName = ["S","St","Sp","Spl","Sk","Sc", "Kr","V","B","D","Dr","Br","Bl","G","Gr","F","Fr","T","Tr","F","Fl","Q",];
-let middleName = ["a","e","i","o","y","ö","ie","oo","ee"];
-let endName = ["rk", "rt", "nk", "k", "rtle", "rple", "gle", "nkle", "sh", "sch"];
+let middleName = ["a","i","o","y","ö","ie","oo","ee", "öö", "oa"];
+let endName = ["rk", "rt", "nk", "rkle", "k", "rtle", "rple", "gle", "nkle", "sh", "sch", "oo", "i"];
+
+let fonts = ["'MuseoModerno', cursive", "'Syne', sans-serif", "'Kulim Park', sans-serif", "'Lexend Giga', sans-serif", "'Red Hat Display', sans-serif", "'Bungee', cursive", "'Arvo', serif", "'Bungee', cursive", ];
+let colors = ["#FF6852", "#0047FF", "#00E56F", "#118DF0", "#2A176F", "#F85F73", "#FF304F", "#FFB401"];
 
 
 let pickName = () => {
@@ -13,7 +16,37 @@ let pickName = () => {
   header.innerHTML = start + middle + end; 
 }  
 
-pickName();
 
+let changeFont = () => {
+  let primaryFontEntities = document.getElementsByClassName("font");
+  let font = randomFont();
+  console.log(primaryFontEntities[0])
+  primaryFontEntities[0].style.fontFamily = font;
+  primaryFontEntities[1].style.fontFamily = font;
+}
 
+let changeColor = () => {
+  const color = randomColor();
+  document.body.style.background = color;
+  document.getElementById("mainCTA").style.color = color;
+}
 
+let randomFont = () => {
+  let font = fonts[Math.floor(Math.random() * fonts.length)]
+  return font;
+}
+
+let randomColor = () => {
+  let color = colors[Math.floor(Math.random() * colors.length)]
+  return color;
+}
+
+const generateStyle = () => {
+  pickName();
+  changeFont();
+  changeColor();
+}
+
+generateStyle();
+
+// entity.style.fontFamily = "'Bungee', cursive";

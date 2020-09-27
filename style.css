@@ -1,17 +1,25 @@
-/* font-family: 'MuseoModerno', cursive;
+/* 
+font-family: 'MuseoModerno', cursive;
 font-family: 'Syne', sans-serif;
 font-family: 'Kulim Park', sans-serif;
 font-family: 'Lexend Giga', sans-serif;
 font-family: 'Red Hat Display', sans-serif;
-font-family: 'Jua', sans-serif;
-font-family: 'Bungee', cursive; */
+font-family: 'Bungee', cursive;
+font-family: 'Arvo', serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Bungee', cursive;
+
+ */
+
+.font {
+  font-family: 'Lexend Giga', sans-serif;
+}
 
 
 body {
   background-color: #FF6852;
   color: #fafafa;
   /* padding: 400px; */
-  font-family: 'Lexend Giga', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,6 +41,8 @@ button {
   font-family: 'Lexend Giga', sans-serif;
   color: #FF6852;
   margin-top: 32px;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 button:active {
